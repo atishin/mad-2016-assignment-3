@@ -9,16 +9,16 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final int VERSION = 1;
+    private static final int VERSION = 2;
 
     private static final String DB_NAME = "Assignment3";
 
-    private static final String PLACES_TABLE = "Places";
+    public static final String PLACES_TABLE = "Places";
 
-    private static final String PLACES_FIELD_ID = "Id";
-    private static final String PLACES_FIELD_LAT = "Lat";
-    private static final String PLACES_FIELD_LNG = "Lng";
-    private static final String PLACES_FIELD_TITLE = "Title";
+    public static final String PLACES_FIELD_ID = "Id";
+    public static final String PLACES_FIELD_LAT = "Lat";
+    public static final String PLACES_FIELD_LNG = "Lng";
+    public static final String PLACES_FIELD_TITLE = "Title";
 
     public DBHelper(Context context) {
         super(context, DB_NAME, null, VERSION);
